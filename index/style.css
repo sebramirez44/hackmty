@@ -1,7 +1,35 @@
 h1{
-    background-color:red;
-    margin: 0;
+ 
+    margin: 1em;
     height:2em;
+    font-size:3em;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    flex-direction:row;
+    background-color:red;
+    width:150%;
+    padding:0.65em;
+    padding-bottom:0.3em;
+    border-top-left-radius:0.5em;
+    border-top-right-radius:0.5em;
+    margin-bottom:0;
+}
+.image{
+    margin: 1em;
+    margin-bottom:0;
+    height:12em;
+    font-size:3em;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    flex-direction:row;
+    background-image: url("/home/sebastian/Desktop/hackmty/images/ethereum.jpg");
+    background-size:cover;
+    width:150%;
+    padding:0.65em;
+    padding-bottom:0.3em;
+    margin-top:0;
 }
 
 .top img{
@@ -14,6 +42,9 @@ h1{
 body{
     margin:0;
 }
+#home{
+    font-size:2.2rem;
+}
 nav{
     display:flex;
     justify-content:space-between;
@@ -23,6 +54,7 @@ nav ul,nav li{
     display:inline;
     margin:0;
     padding:0;
+    font-size:2.2rem;
 }
 nav ul{
     display:flex;
@@ -35,11 +67,53 @@ nav a{
     align-self:center;
     color:rgb(255, 255, 255);
     text-decoration:none;
+
 }
+
 nav a:hover{
     text-decoration:underline;
 }
 aside{
+    display:flex;
+    flex-direction:row;
+}
+.container img{
+    width:15em;
+    padding:2em;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.container{
+    margin:1em;
+    width:19em;
+    background-color:white;
+    border-radius:1.5em;
+    padding:2em;
+    padding-top:1em;
+    text-align:center;
+}
+.container:hover{
+    border:1px solid #1b76c4;
+    cursor:pointer;
+}
+button{
+    background:none;
+    color:black;
+    border:2px,solid;
+    padding:1em 2em;
+    font-size:1em;
+    transition: all 0.25s;
+    transition:color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+button:hover{
+    border-color: #1b76c4;
+    color:#1b76c4;
+    box-shadow: 0 0.5em -0/4em #1b76c4;
+    transform:translateY(-0.25em);
+    cursor:pointer;
+}
+.widget{
     background-color:rgb(234, 235, 193);
     width:400px;
     height:350px;
@@ -48,10 +122,10 @@ aside{
     flex-direction:column;
     border-radius:5%;
 }
-aside h2{
+.widget h2{
     padding:1em;
 }
-aside ul{
+.widget ul{
     list-style-type:none;
     margin:0;
     padding:0;
@@ -59,7 +133,7 @@ aside ul{
     flex-direction:column;
     
 }
-aside li{
+.widget li{
     border: 2px solid black;
     width:18em;
     margin:0;
@@ -70,17 +144,33 @@ aside li{
 
 }
 
-aside a{
+.widget a{
     color:black;
     text-decoration:none;
 }
-aside li:hover{
+.widget li:hover{
     align-self:left;
     width:90%;
     cursor:pointer;
     border-color:#1b76c4;
     color: #1b76c4;
 }
+.calculator{
+    margin: 1em;
+    height:10em;
+
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    flex-direction:column;
+    background-color:red;
+    width:150%;
+    padding:0.65em;
+    padding-bottom:0.3em;
+    margin-top:0;
+}
+
 body{
     background-color:#F5E2C8;
+    
 }

@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Ethereum</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -34,14 +35,33 @@
                 <li onclick="window.location='http://coinmarketcap.com';">Coin Marketcap</li>
             </ul>
         </div>
-        <div class="container" onclick="window.location='/home/sebastian/Desktop/hackmty/index/ethereum.html';">
-            <img alt="Ethereum" src="/home/sebastian/Desktop/hackmty/images/ethereum.svg">
-            <h3>Ethereum</h3>
-            <p>Conoce informacion sobre ethereum y crea un record de tus inversiones.</p>
-
+        <div class="container2">
+            <h1>Ethereum investment tool</h1>
+            <div class="image"></div>
+            <div class="calculator">
+                <h3>Calculator</h3>
+                <p>
+                    Enter the price you bought the ethereum at: <input type="text" id="precio">
+                </p>
+                <p>
+                    Enter the current price of ethereum: <input type="text" id="current">
+                </p>
+                <p id="placeholder">
+                    s
+                </p>
+                <button onclick="calc()">Submit</button>
+            </div>
         </div>
     </aside>
-
+    <script>
+        var price = document.getElementById('precio');
+        var current = document.getElementById('current');
+        function calc() {
+            var percentage = price * 100 / current;
+            var answer = percentage - 100;
+            console.log(answer)
+        }
+    </script>
 </body>
 
 </html>
