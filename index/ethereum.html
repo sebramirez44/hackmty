@@ -26,6 +26,7 @@
 
         </div>
     </header>
+    <div class='content'>
     <aside>
         <div class="widget">
             <h2>Otras paginas de crypto: </h2>
@@ -35,8 +36,13 @@
                 <li onclick="window.location='http://coinmarketcap.com';">Coin Marketcap</li>
             </ul>
         </div>
+    </aside>
+    
         <div class="container2">
+           <div class="cryptotitle">
             <h1>Ethereum investment tool</h1>
+            </div>
+       
             <div class="image"></div>
             <div class="calculator">
                 <h3>Calculator</h3>
@@ -46,22 +52,13 @@
                 <p>
                     Enter the current price of ethereum: <input type="text" id="current">
                 </p>
-                <p id="placeholder">
-                    s
-                </p>
                 <button onclick="calc()">Submit</button>
             </div>
+            </div>
         </div>
-    </aside>
-    <script>
-        var price = document.getElementById('precio');
-        var current = document.getElementById('current');
-        function calc() {
-            var percentage = price * 100 / current;
-            var answer = percentage - 100;
-            console.log(answer)
-        }
-    </script>
+    </div>
+
+
 </body>
 
 </html>
