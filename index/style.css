@@ -1,22 +1,29 @@
 .image{
     margin: 1em;
     margin-bottom:0;
-    height:12em;
+    height:8em;
     font-size:3em;
     display:flex;
     justify-content: center;
     align-content:center;
-    margin-left:27%;
+    margin-left:33%;
     flex-direction:row;
-    background-image: url("/home/sebastian/Desktop/hackmty/images/ethereum.png");
+    background-image: url("images/ethereum.png");
     background-position:center;
     background-size:cover;
-    width:40%;
+    width:30%;
     padding:0.65em;
     padding-bottom:0.3em;
     margin-top:0;
 }
-
+@media(max-width:1130px){
+    .image{
+        width:20%;
+        padding:1em;
+        height:4em;
+        margin-left:30%;
+    }
+}
 
 .top img{
     width:5em;
@@ -71,6 +78,7 @@ aside{
     display:flex;
     flex-direction:column;
     justify-content: center;
+    
 }
 .container{
     display:flex;
@@ -81,15 +89,22 @@ aside{
     border-radius:1.5em;
     padding:2em;
     padding-top:1em;
-    text-align:center;
+    
 
 }
 @media(max-width:874px){
     .content{
         display:flex;
+        justify-content:center;
         flex-direction:column;
     }
+    .contentparent{
+        display:flex;
+        justify-content:center;
+        margin-left:10%;
+    }    
 }
+
 @media(min-width:874px){
     .content{
         display:flex;
@@ -128,6 +143,12 @@ button:hover{
     flex-direction:column;
     border-radius:5%;
 }
+@media(max-width:874px){
+    .widget{
+        width:80%;
+    }
+    
+}
 .widget h2{
     padding:1em;
 }
@@ -141,7 +162,7 @@ button:hover{
 }
 .widget li{
     border: 2px solid black;
-    width:18em;
+    width:60%;
     margin:0;
     padding:1em;
     display:flex;
@@ -156,7 +177,6 @@ button:hover{
 }
 .widget li:hover{
     align-self:left;
-    width:90%;
     cursor:pointer;
     border-color:#1b76c4;
     color: #1b76c4;
@@ -171,7 +191,46 @@ button:hover{
     padding-top:1em;
     text-align:center;
 }
-
+@media(max-width:874px)and (min-width:380px){
+    .container2{
+        width:70%;
+    }
+}
+@media(max-width:380px){
+    .container2{
+        margin-left:0;
+        width:70%;
+    }
+}
+@media(max-width:515px){
+    .image{
+        width:20%;
+        height:2.5em;
+        padding:15%;
+    }
+}
+.menu{
+    height:5em;
+    width:5em;
+    background-color:#4900FF;
+    border-radius:10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+.menuline{
+    width:82%;
+    height:30%;
+    margin:5%;
+    height:1.6666em;
+    border-style:solid;
+    border-color:black;
+    border-width:3px;            
+    background-color:rgb(164, 164, 219);
+    padding:1%;
+    border-radius:5%;
+}
 body{
     background-color:#F5E2C8;
     
